@@ -8,7 +8,7 @@ def ASCIIHash(Test): #ASCII ENCODING
     result = ASCII.hexdigest()#STRING OF DOUBLE LENGTH / HEX VALUE
     return result #RETURN RESULT
 
-if hashstring != 'c89aa2ffb9edcc6604005196b5f0e0e4' : #IF HASHSTRING IS NOT EQUAL OR THE SAME AS THE HASH PROVIDED
+while hashstring != 'c89aa2ffb9edcc6604005196b5f0e0e4' : #IF HASHSTRING IS NOT EQUAL OR THE SAME AS THE HASH PROVIDED
     #USE ecsc STRING
     hashstring = ASCIIHash(hashstring)
     print(hashstring) #PRINT HASH's
