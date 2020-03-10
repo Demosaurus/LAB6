@@ -1,14 +1,17 @@
-import hashlib  #HASHLIB IMPORT
+#HASHLIB IMPORTED FOR HASHING FUNCTIONS
+import hashlib
 
-hashstring = 'ecsc' #STRING
-hash = 'c89aa2ffb9edcc6604005196b5f0e0e4' #HASH
+#STRING USER
+String = 'ecsc'
+Hash = 'c89aa2ffb9edcc6604005196b5f0e0e4'
 
-def ASCIIHash(Test): #ASCII ENCODING
-    ASCII = hashlib.md5(Test.encode('ascii')) #ECODING ecsc IN ASCII AND PASSING TO MD5
-    result = ASCII.hexdigest()#STRING OF DOUBLE LENGTH / HEX VALUE
-    return result #RETURN RESULT
+#MD5 HASH OBJECT/PASSING TO MD5
+Hash = hashlib.md5(String.encode()).hexdigest()
 
-while hashstring != 'c89aa2ffb9edcc6604005196b5f0e0e4' : #IF HASHSTRING IS NOT EQUAL OR THE SAME AS THE HASH PROVIDED
-    #USE ecsc STRING
-    hashstring = ASCIIHash(hashstring)
-    print(hashstring) #PRINT HASH's
+#IF HASHSTRING IS NOT EQUAL OR THE SAME AS THE HASH PROVIDED
+while Hash != 'c89aa2ffb9edcc6604005196b5f0e0e4' :
+  Hash = hashlib.md5(Hash.encode()).hexdigest()
+#HASH PRINTED OUT IN HEX FORMAT
+  print (Hash)
+   
+
