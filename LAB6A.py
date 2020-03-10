@@ -1,17 +1,16 @@
 #HASHLIB IMPORTED FOR HASHING FUNCTIONS
 import hashlib
 
-#STRING USER
-String = 'ecsc'
+#STRING USER AND INT HASH
+User = 'ecsc'
 Hash = 'c89aa2ffb9edcc6604005196b5f0e0e4'
 
 #MD5 HASH OBJECT/PASSING TO MD5
-Hash = hashlib.md5(String.encode()).hexdigest()
+Hash = hashlib.md5(User.encode()).hexdigest()
 
 #IF HASHSTRING IS NOT EQUAL OR THE SAME AS THE HASH PROVIDED
 while Hash != 'c89aa2ffb9edcc6604005196b5f0e0e4' :
   Hash = hashlib.md5(Hash.encode()).hexdigest()
 #HASH PRINTED OUT IN HEX FORMAT
   print (Hash)
-   
 
